@@ -5,10 +5,12 @@ from langchain_text_splitters import CharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain.chains.question_answering import load_qa_chain
+# ඉහත පේළිය වැඩ නොකරයි නම් පමණක් මෙය පාවිච්චි කරන්න:
+# from langchain_community.chains.question_answering import load_qa_chain
 
 # 🔴 නොමිලේ පාවිච්චි කරන්න Google Gemini API Key එක මෙතනට දාන්න
 # ඔයාට මේක https://aistudio.google.com/ එකෙන් නොමිලේ ගන්න පුළුවන්
-os.environ["GOOGLE_API_KEY"] = "YOUR_GEMINI_API_KEY_HERE"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyB2oKxBYY_6lAM6GpRBU-Roqz1wB6bnFwQ"
 
 st.set_page_config(page_title="AI PDF ChatBot", page_icon="📚")
 st.header("📚 AI PDF එකත් එක්ක Chat කරමු (Free AI)")
